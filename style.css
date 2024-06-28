@@ -7,10 +7,19 @@
 }
 
 html {
-    background-color: rgb(7, 49, 104);
+    background-color: rgb(135, 24, 187);
     
 
 
+}
+.titulo2 {
+  padding: 5px;
+  color: #fff;
+  font-size: 16px;
+  }
+.titulo {
+background-color: rgba(0,0, 0, 0.3);
+padding: 5px;
 }
 nav{
     background: url('background.jpeg');
@@ -58,7 +67,7 @@ nav li a:hover{
     margin: 20px 0;
 }
 .banner{
-    height: 50vh;
+    height: 100vh;
     background: linear-gradient( rgba(0,0,0,0.281), rgba(0,0,0,0.308)),url('background.jpeg');
     background-size: cover;
     background-position: top center;
@@ -68,7 +77,16 @@ nav li a:hover{
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
+    padding: 0 15px 70px;
 }
+.texto {
+
+display: flex;
+flex-direction: column;
+gap: 90px;
+
+}
+
 .texto .titulo{
     color: #fff;
     font-size: 15px;
@@ -107,7 +125,6 @@ nav li a:hover{
 .texto .botoes button.overlay{
     background: white;
     color: black;
-    animation: vibrar 0.5s ease-in-out infinite both;
 }
 @keyframes vibrar {
     0%{
@@ -141,7 +158,7 @@ nav li a:hover{
   }
   
   /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-card:hover .flip-card-inner {
+  .hover-effect {
     transform: rotateY(180deg);
   }
   
@@ -230,7 +247,7 @@ body {
 }
 
 .login-container {
-  background: #ebebeb;
+  background: rgb(79, 15, 109);
   padding: 12px;
 }
 
@@ -239,7 +256,8 @@ body {
   padding: 12px;
 }
 
-.login input {
+.login a {
+  text-decoration: none;
   box-sizing: border-box;
   display: block;
   width: 100%;
@@ -264,7 +282,8 @@ body {
   border-color: #888;
 }
 
-.login input[type="submit"] {
+.login a {
+  text-align: center;
   background: rgb(114, 17, 204);
   border-color: transparent;
   color: #fff;
